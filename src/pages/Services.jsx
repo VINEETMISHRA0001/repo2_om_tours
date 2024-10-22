@@ -301,9 +301,7 @@ const Services = () => {
                     <span className="font-bold">Duration: </span>
                     {pkg.duration}
                   </p>
-                  <p className="text-gray-700 mb-4">
-                    <span className="font-bold">Price: </span>₹{pkg.price}
-                  </p>
+
                   <Link to={`/char-dham-yatra`}>
                     <button className="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition">
                       Explore..
