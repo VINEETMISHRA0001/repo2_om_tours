@@ -83,6 +83,10 @@ export const router = createBrowserRouter([
         path: '/wildlife-adventure-rajasthan',
         element: <WildLifePage />,
       },
+      {
+        path: '/char-dham-yatra',
+        element: <CharDhamYatra />,
+      },
     ],
   },
 

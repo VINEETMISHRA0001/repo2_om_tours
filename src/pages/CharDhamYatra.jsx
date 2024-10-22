@@ -160,21 +160,228 @@ export default function CharDhamYatra() {
       </div>
 
       {/* Section 2: Itinerary */}
-      <div className="bg-gray-50 py-12">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Itinerary</h2>
-          <div className="space-y-4">
-            {itinerary.map((day, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow">
-                <h3 className="text-lg font-semibold text-gray-800">
-                  {day.day}
+      {/* <!-- Char Dham Yatra Itinerary Section --> */}
+      {/* <!-- Char Dham Yatra Itinerary Section --> */}
+      <section className="bg-gradient-to-r from-green-50 to-blue-100 py-12">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
+            Char Dham Yatra - 10 Days Itinerary
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* <!-- Card Day 1 --> */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Day 1: Haridwar/Rishikesh to Barkot
                 </h3>
-                <p className="text-gray-700">{day.details}</p>
+                <p className="mt-4 text-gray-600">
+                  Start your journey from Haridwar or Rishikesh. Visit Har Ki
+                  Pauri and Kempty Falls en route. Stay overnight in Barkot.
+                </p>
+                <div className="mt-4">
+                  <span className="inline-block bg-green-200 text-green-800 text-sm px-2 py-1 rounded-full">
+                    Distance: 210 km
+                  </span>
+                  <span className="inline-block bg-blue-200 text-blue-800 text-sm px-2 py-1 rounded-full ml-2">
+                    Time: 7-8 hours
+                  </span>
+                </div>
               </div>
-            ))}
+            </div>
+
+            {/* <!-- Card Day 2 --> */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Day 2: Barkot – Yamunotri Darshan
+                </h3>
+                <p className="mt-4 text-gray-600">
+                  Drive to Janki Chatti and trek to Yamunotri. Visit the temple
+                  and return to Barkot by evening. Stay overnight.
+                </p>
+                <div className="mt-4">
+                  <span className="inline-block bg-green-200 text-green-800 text-sm px-2 py-1 rounded-full">
+                    Distance: 36 km drive + 6 km trek
+                  </span>
+                  <span className="inline-block bg-blue-200 text-blue-800 text-sm px-2 py-1 rounded-full ml-2">
+                    Trek: 5 hours
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* <!-- Card Day 3 --> */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Day 3: Barkot to Uttarkashi
+                </h3>
+                <p className="mt-4 text-gray-600">
+                  Proceed to Uttarkashi, a holy town on the banks of Bhagirathi
+                  River. Visit Kashi Vishwanath temple.
+                </p>
+                <div className="mt-4">
+                  <span className="inline-block bg-green-200 text-green-800 text-sm px-2 py-1 rounded-full">
+                    Distance: 85 km
+                  </span>
+                  <span className="inline-block bg-blue-200 text-blue-800 text-sm px-2 py-1 rounded-full ml-2">
+                    Time: 4-5 hours
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* <!-- Card Day 4 --> */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Day 4: Uttarkashi – Gangotri Darshan
+                </h3>
+                <p className="mt-4 text-gray-600">
+                  Drive to Gangotri, the origin of River Ganga. Visit the temple
+                  and return to Uttarkashi for an overnight stay.
+                </p>
+                <div className="mt-4">
+                  <span className="inline-block bg-green-200 text-green-800 text-sm px-2 py-1 rounded-full">
+                    Distance: 100 km
+                  </span>
+                  <span className="inline-block bg-blue-200 text-blue-800 text-sm px-2 py-1 rounded-full ml-2">
+                    Time: 3-4 hours
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* <!-- Card Day 5 --> */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Day 5: Uttarkashi to Guptkashi
+                </h3>
+                <p className="mt-4 text-gray-600">
+                  Drive to Guptkashi. En route, visit Tehri Dam. Evening visit
+                  to Vishwanath temple.
+                </p>
+                <div className="mt-4">
+                  <span className="inline-block bg-green-200 text-green-800 text-sm px-2 py-1 rounded-full">
+                    Distance: 220 km
+                  </span>
+                  <span className="inline-block bg-blue-200 text-blue-800 text-sm px-2 py-1 rounded-full ml-2">
+                    Time: 8-9 hours
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* <!-- Card Day 6 --> */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Day 6: Guptkashi to Kedarnath Darshan
+                </h3>
+                <p className="mt-4 text-gray-600">
+                  Trek to Kedarnath or take a helicopter. Visit the Kedarnath
+                  temple and stay overnight in the holy town.
+                </p>
+                <div className="mt-4">
+                  <span className="inline-block bg-green-200 text-green-800 text-sm px-2 py-1 rounded-full">
+                    Distance: 16 km trek
+                  </span>
+                  <span className="inline-block bg-blue-200 text-blue-800 text-sm px-2 py-1 rounded-full ml-2">
+                    Trek: 7-8 hours
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* <!-- Card Day 7 --> */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Day 7: Kedarnath to Guptkashi
+                </h3>
+                <p className="mt-4 text-gray-600">
+                  After early morning darshan at Kedarnath temple, return to
+                  Guptkashi. Stay overnight in Guptkashi.
+                </p>
+                <div className="mt-4">
+                  <span className="inline-block bg-green-200 text-green-800 text-sm px-2 py-1 rounded-full">
+                    Distance: 16 km trek
+                  </span>
+                  <span className="inline-block bg-blue-200 text-blue-800 text-sm px-2 py-1 rounded-full ml-2">
+                    Trek: 7-8 hours
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* <!-- Card Day 8 --> */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Day 8: Guptkashi to Badrinath
+                </h3>
+                <p className="mt-4 text-gray-600">
+                  Drive to Badrinath via Joshimath. On arrival, visit the
+                  Badrinath temple and participate in the evening aarti.
+                </p>
+                <div className="mt-4">
+                  <span className="inline-block bg-green-200 text-green-800 text-sm px-2 py-1 rounded-full">
+                    Distance: 190 km
+                  </span>
+                  <span className="inline-block bg-blue-200 text-blue-800 text-sm px-2 py-1 rounded-full ml-2">
+                    Time: 7-8 hours
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* <!-- Card Day 9 --> */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Day 9: Badrinath to Rudraprayag
+                </h3>
+                <p className="mt-4 text-gray-600">
+                  After darshan at Badrinath temple and a visit to Mana Village,
+                  drive to Rudraprayag for an overnight stay.
+                </p>
+                <div className="mt-4">
+                  <span className="inline-block bg-green-200 text-green-800 text-sm px-2 py-1 rounded-full">
+                    Distance: 160 km
+                  </span>
+                  <span className="inline-block bg-blue-200 text-blue-800 text-sm px-2 py-1 rounded-full ml-2">
+                    Time: 6-7 hours
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* <!-- Card Day 10 --> */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Day 10: Rudraprayag to Haridwar
+                </h3>
+                <p className="mt-4 text-gray-600">
+                  Conclude your Char Dham Yatra by driving back to Haridwar.
+                  Visit Rishikesh on the way and take part in Ganga Aarti before
+                  departure.
+                </p>
+                <div className="mt-4">
+                  <span className="inline-block bg-green-200 text-green-800 text-sm px-2 py-1 rounded-full">
+                    Distance: 165 km
+                  </span>
+                  <span className="inline-block bg-blue-200 text-blue-800 text-sm px-2 py-1 rounded-full ml-2">
+                    Time: 5-6 hours
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Section 3: Inclusions and Exclusions */}
       <div className="bg-white py-12">
