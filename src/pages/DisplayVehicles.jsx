@@ -9,7 +9,7 @@ const DisplayVehicles = () => {
   useEffect(() => {
     // Fetching data from the API
     axios
-      .get('/api/admin/vehicles')
+      .get('https://om-tours-backend.vercel.app/api/admin/vehicles')
       .then((response) => {
         console.log('API response:', response.data); // Log the response
         if (Array.isArray(response.data)) {
