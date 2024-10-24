@@ -193,7 +193,6 @@ const Services = () => {
       // Fetch packages
       const packagesResponse = await axios.get('/api/tours');
 
-      console.log(packagesResponse);
       // Ensure that the API response is an array
       const packagesData = Array.isArray(packagesResponse.data)
         ? packagesResponse.data
