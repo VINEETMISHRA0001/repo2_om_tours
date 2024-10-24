@@ -43,14 +43,14 @@ const Features = () => {
                 About Our Company
               </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Services Provided By Om Tours
+                Services Provided By Om Banna Tour and Travels
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                At OM Tours, we believe that every journey is an opportunity for
-                adventure, discovery, and creating lifelong memories. As a
-                premier travel agency and tour package provider, we are
-                dedicated to offering you the experience of a lifetime, without
-                breaking the bank.
+                At Om Banna Tour and Travels, we believe that every journey is
+                an opportunity for adventure, discovery, and creating lifelong
+                memories. As a premier travel agency and tour package provider,
+                we are dedicated to offering you the experience of a lifetime,
+                without breaking the bank.
               </p>
             </div>
           </div>
@@ -67,10 +67,11 @@ const Features = () => {
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
               <p>
                 Whether you're planning a romantic getaway, a family vacation,
-                or a group adventure, let OM Tours be your trusted partner in
-                travel. Explore the world with confidence, knowing that your
-                journey is in the hands of experts who are passionate about
-                creating extraordinary experiences for every traveler.
+                or a group adventure, let Om Banna Tour and Travels be your
+                trusted partner in travel. Explore the world with confidence,
+                knowing that your journey is in the hands of experts who are
+                passionate about creating extraordinary experiences for every
+                traveler.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">

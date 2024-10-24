@@ -44,7 +44,7 @@ const Footer = () => {
           <div className="flex justify-start flex-col  gap-4">
             <SiRoadmapdotsh className="flex text-white text-5xl sm:text-5xl" />
             <h1 className="text-gray-50 font-semibold text-4xl sm:text-4xl">
-              Om Tours
+              Om Banna Tour and Travels
             </h1>
             <p className="text-gray-200">A Tour And Travel agency</p>
           </div>

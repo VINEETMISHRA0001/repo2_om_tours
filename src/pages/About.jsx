@@ -15,7 +15,7 @@ const AboutUs = () => {
               Tours and Pakages
             </h2>
             <p className="text-xl text-white">
-              Discover the world with OM Tours
+              Discover the world with Om Banna Tour and Travels
             </p>
           </div>
         </div>
@@ -34,10 +34,10 @@ const AboutUs = () => {
             <div className="lg:w-1/2 mb-10 lg:mb-0">
               <h1 className="text-6xl text-dark mb-10 font-bold">UDAIPUR</h1>
               <p className="text-gray-700 mb-6">
-                Welcome to OM Tours, your gateway to the most unforgettable
-                travel experiences. Our mission is to offer you the best tours,
-                combining adventure, culture, and relaxation in one
-                comprehensive package.
+                Welcome to Om Banna Tour and Travels, your gateway to the most
+                unforgettable travel experiences. Our mission is to offer you
+                the best tours, combining adventure, culture, and relaxation in
+                one comprehensive package.
               </p>
               <p className="text-gray-700 mb-6">
                 Udaipur, often referred to as the "City of Lakes," is celebrated
@@ -68,10 +68,10 @@ const AboutUs = () => {
             <div className="lg:w-1/2 mb-10 lg:mb-0">
               <h1 className="text-6xl text-dark mb-10 font-bold">JODHPUR</h1>
               <p className="text-gray-700 mb-6">
-                Welcome to OM Tours, your gateway to the most unforgettable
-                travel experiences. Our mission is to offer you the best tours,
-                combining adventure, culture, and relaxation in one
-                comprehensive package.
+                Welcome to Om Banna Tour and Travels, your gateway to the most
+                unforgettable travel experiences. Our mission is to offer you
+                the best tours, combining adventure, culture, and relaxation in
+                one comprehensive package.
               </p>
               <p className="text-gray-700 mb-6">
                 Jodhpur, famously known as the "Blue City" due to its
@@ -117,10 +117,10 @@ const AboutUs = () => {
             <div className="lg:w-1/2 mb-10 lg:mb-0">
               <h1 className="text-6xl text-dark mb-10 font-bold">Mount Abu</h1>
               <p className="text-gray-700 mb-6">
-                Welcome to OM Tours, your gateway to the most unforgettable
-                travel experiences. Our mission is to offer you the best tours,
-                combining adventure, culture, and relaxation in one
-                comprehensive package.
+                Welcome to Om Banna Tour and Travels, your gateway to the most
+                unforgettable travel experiences. Our mission is to offer you
+                the best tours, combining adventure, culture, and relaxation in
+                one comprehensive package.
               </p>
               <p className="text-gray-700 mb-6">
                 Mount Abu, perched in the Aravalli Range, is a serene hill

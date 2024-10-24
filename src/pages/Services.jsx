@@ -42,7 +42,7 @@
 //           <div className="container mx-auto text-center">
 //             <h2 className="text-4xl font-bold text-white mb-4">Services</h2>
 //             <p className="text-xl text-white">
-//               Discover the world with OM Tours
+//               Discover the world with Om Banna Tour and Travels
 //             </p>
 //           </div>
 //         </div>
@@ -245,7 +245,7 @@ const Services = () => {
           <div className="container mx-auto text-center">
             <h2 className="text-4xl font-bold text-white mb-4">Services</h2>
             <p className="text-xl text-white">
-              Discover the world with OM Tours
+              Discover the world with Om Banna Tour and Travels
             </p>
           </div>
         </div>
