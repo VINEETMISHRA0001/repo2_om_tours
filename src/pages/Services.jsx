@@ -193,6 +193,7 @@ const Services = () => {
       // Fetch packages
       const packagesResponse = await axios.get('/api/tours');
 
+      console.log(packagesResponse);
       // Ensure that the API response is an array
       const packagesData = Array.isArray(packagesResponse.data)
         ? packagesResponse.data
@@ -287,38 +288,39 @@ const Services = () => {
             Popular Tour Packages
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {popularPackages.map((pkg, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-              >
-                <img
-                  src={
-                    pkg.images && pkg.images[0]
-                      ? pkg.images[0]
-                      : '/default-image.jpg'
-                  }
-                  alt={pkg.name}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-md font-bold text-gray-800 mb-2">
-                    {pkg.trip_overview.split(' ').slice(0, 8).join(' ')}
-                    {pkg.trip_overview.split(' ').length > 8 && '...'}
-                  </h3>
-                  <p className="text-gray-700 mb-2">
-                    <span className="font-bold">Duration: </span>
-                    {pkg.duration}
-                  </p>
+            {popularPackages &&
+              popularPackages.map((pkg, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                >
+                  <img
+                    src={
+                      pkg.images && pkg.images[0]
+                        ? pkg.images[0]
+                        : '/default-image.jpg'
+                    }
+                    alt={pkg.name}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-md font-bold text-gray-800 mb-2">
+                      {pkg.trip_overview.split(' ').slice(0, 8).join(' ')}
+                      {pkg.trip_overview.split(' ').length > 8 && '...'}
+                    </h3>
+                    <p className="text-gray-700 mb-2">
+                      <span className="font-bold">Duration: </span>
+                      {pkg.duration}
+                    </p>
 
-                  <Link to={`/char-dham-yatra`}>
-                    <button className="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition">
-                      Explore..
-                    </button>
-                  </Link>
+                    <Link to={`/char-dham-yatra`}>
+                      <button className="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition">
+                        Explore..
+                      </button>
+                    </Link>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </section>
