@@ -21,7 +21,7 @@ const HomePageLayout = () => {
               to="/"
               className="flex flex-row-reverse gap-5 items-center -m-1.5 p-1.5"
             >
-              <span className="text-small text-bold text-2xl text-gray-900">
+              <span className="hidden lg:text-small lg:text-bold lg:text-2xl lg:text-gray-900">
                 Om Banna Tours and Travels
               </span>
               {/* <ing className="h-[40px] w-[40px]" /> */}
