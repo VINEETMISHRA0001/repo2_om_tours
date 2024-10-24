@@ -281,48 +281,41 @@ const Services = () => {
       </section>
 
       {/* Popular Packages Section */}
-      <section className="py-16 bg-gray-100">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
-            Popular Tour Packages
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {popularPackages &&
-              popularPackages.map((pkg, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-                >
-                  <img
-                    src={
-                      pkg.images && pkg.images[0]
-                        ? pkg.images[0]
-                        : '/default-image.jpg'
-                    }
-                    alt={pkg.name}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-6">
-                    <h3 className="text-md font-bold text-gray-800 mb-2">
-                      {pkg.trip_overview.split(' ').slice(0, 8).join(' ')}
-                      {pkg.trip_overview.split(' ').length > 8 && '...'}
-                    </h3>
-                    <p className="text-gray-700 mb-2">
-                      <span className="font-bold">Duration: </span>
-                      {pkg.duration}
-                    </p>
+      <div>
+        {/* Static Banner Section */}
 
-                    <Link to={`/char-dham-yatra`}>
-                      <button className="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition">
-                        Explore..
-                      </button>
-                    </Link>
-                  </div>
+        {/* Popular Tour Packages Section */}
+        <section className="py-16 bg-gray-100">
+          <div className="container mx-auto px-6">
+            <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
+              Popular Tour Packages
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfAk6pkD3jUHC8nCMTDLj5HdJddDCOHmBcw&s"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-md font-bold text-gray-800 mb-2">
+                    Char Dham Yatra
+                  </h3>
+                  <p className="text-gray-700 mb-2">
+                    <span className="font-bold">Duration: </span>
+                    10 Days
+                  </p>
+
+                  <Link to={`/char-dham-yatra`}>
+                    <button className="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition">
+                      Explore..
+                    </button>
+                  </Link>
                 </div>
-              ))}
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 };

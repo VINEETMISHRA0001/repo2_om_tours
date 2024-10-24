@@ -24,7 +24,12 @@ const HomePageLayout = () => {
               <span className="text-small text-bold text-2xl text-gray-900">
                 Om Tours
               </span>
-              <SiRoadmapdotsh className="h-[40px] w-[40px]" />
+              {/* <ing className="h-[40px] w-[40px]" /> */}
+              <img
+                className="w-10 h-10 rounded-full object-cover"
+                src="/assets/XX.jpg"
+                alt=""
+              />
             </Link>
           </div>
 
