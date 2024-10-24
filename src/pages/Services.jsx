@@ -197,6 +197,7 @@ const Services = () => {
 
       // setServices(packagesResponse.data);
       setPopularPackages(packagesResponse.data);
+      console.log(popularPackages);
     } catch (error) {
       console.error('Error fetching data:', error);
       setError('Failed to load data. Please try again later.');
