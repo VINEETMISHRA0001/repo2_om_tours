@@ -193,9 +193,7 @@ const Services = () => {
     try {
       setLoading(true);
       // const servicesResponse = await axios.get('YOUR_API_URL_FOR_SERVICES'); // replace with your API endpoint
-      const packagesResponse = await axios.get(
-        'https://om-tours-backend.vercel.app/api/tours'
-      ); // replace with your API endpoint
+      const packagesResponse = await axios.get('/api/tours'); // replace with your API endpoint
 
       // setServices(packagesResponse.data);
       setPopularPackages(packagesResponse.data);
