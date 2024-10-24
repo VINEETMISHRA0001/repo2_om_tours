@@ -150,7 +150,6 @@
 // };
 
 // export default Services;
-
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
@@ -182,22 +181,24 @@ const carservices = [
 ];
 
 const Services = () => {
-  // State to hold fetched services and packages
-  const [services, setServices] = useState([]);
-  const [popularPackages, setPopularPackages] = useState([]);
+  const [services, setServices] = useState([]); // for future use
+  const [popularPackages, setPopularPackages] = useState([]); // initial state should be an array
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Function to fetch services and packages from API
+  // Fetch services and packages
   const fetchServicesAndPackages = async () => {
     try {
       setLoading(true);
-      // const servicesResponse = await axios.get('YOUR_API_URL_FOR_SERVICES'); // replace with your API endpoint
-      const packagesResponse = await axios.get('/api/tours'); // replace with your API endpoint
+      // Fetch packages
+      const packagesResponse = await axios.get('/api/tours');
 
-      // setServices(packagesResponse.data);
-      setPopularPackages(packagesResponse.data);
-      console.log(popularPackages);
+      // Ensure that the API response is an array
+      const packagesData = Array.isArray(packagesResponse.data)
+        ? packagesResponse.data
+        : [];
+
+      setPopularPackages(packagesData); // Update state with data
     } catch (error) {
       console.error('Error fetching data:', error);
       setError('Failed to load data. Please try again later.');
@@ -206,9 +207,14 @@ const Services = () => {
     }
   };
 
+  // Log popularPackages after they are updated
   useEffect(() => {
     fetchServicesAndPackages();
   }, []);
+
+  useEffect(() => {
+    console.log('Updated popularPackages:', popularPackages);
+  }, [popularPackages]);
 
   if (loading) {
     return (
@@ -287,7 +293,11 @@ const Services = () => {
                 className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
                 <img
-                  src={pkg.images[0]} // assuming the API returns a field 'image'
+                  src={
+                    pkg.images && pkg.images[0]
+                      ? pkg.images[0]
+                      : '/default-image.jpg'
+                  }
                   alt={pkg.name}
                   className="w-full h-48 object-cover"
                 />
